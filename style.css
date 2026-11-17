@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111317;
+    color: #ffffff;
+}
+
+/* แถบเมนูด้านบน */
+nav {
+    background-color: #090a0c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    border-bottom: 2px solid #ff9900;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .logo {
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+nav .logo span {
+    color: #ff9900;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav .menu a {
+    color: #cccccc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav .menu a:hover {
+    color: #ff9900;
+}
+
+/* ส่วนหัวข้อหลัก */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(17, 19, 23, 1)), 
+                radial-gradient(circle at center, #ff6600 0%, #111317 70%);
+    text-align: center;
+    padding: 110px 20px;
+}
+
+.badge {
+    background-color: #ff9900;
+    color: #000000;
+    padding: 5px 14px;
+    font-size: 13px;
+    font-weight: 800;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin: 15px 0;
+    letter-spacing: 3px;
+    text-shadow: 0 4px 15px rgba(255, 153, 0, 0.4);
+}
+
+.hero p {
+    font-size: 18px;
+    color: #d1d5db;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #000000;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffaa2b;
+    transform: translateY(-2px);
+}
+
+/* ส่วนเนื้อหาและการ์ด */
+.section {
+    padding: 70px 8%;
+}
+
+.bg-dark {
+    background-color: #0b0c0e;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 45px;
+    color: #ff9900;
+    text-transform: uppercase;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1a1d24;
+    border: 1px solid #2c313c;
+    border-top: 4px solid #ff9900;
+    border-radius: 10px;
+    padding: 30px 25px;
+    width: 310px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #ff9900;
+    box-shadow: 0 10px 25px rgba(255, 153, 0, 0.15);
+}
+
+.card-tag {
+    display: inline-block;
+    background-color: rgba(255, 153, 0, 0.15);
+    color: #ff9900;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.card p {
+    color: #a0a8b8;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.weapon-card {
+    border-top: 4px solid #ef4444;
+}
+
+.weapon-card:hover {
+    border-color: #ef4444;
+}
+
+/* ส่วนท้ายเว็บ */
+footer {
+    background-color: #07080a;
+    text-align: center;
+    padding: 25px;
+    color: #777;
+    font-size: 14px;
+    border-top: 1px solid #222;
+}
